@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  background: white;
+  padding: 20px 10px;
+}
+
+.navbar a {
+  color: black;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: gray;
+}
