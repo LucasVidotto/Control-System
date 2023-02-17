@@ -17,7 +17,7 @@ export default function Home() {
       <meta name="description" content="Next-Reactjs-TailWind"></meta>
     </Head>
       <div className='w-full h-full flex flex-col items-center'>
-        <div className="max-w-xs w-72 h-9 mt-4 bg-neutral-800 text-violet-200 flex border-solid border-3 border-stone-900 rounded-xl" >
+        <div className="max-w-xs w-72 h-9 mt-4  text-violet-200 flex border-solid border-b-2 border-r-2 border-gray-500 rounded-xl" >
           <span className='ml-2 mt-1'>{verify.toString()}</span>
           <button 
           type='button' 
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         
         {verify ? 
-        <div className='w-72 h-32 bg-neutral-700 rounded-md flex flex-col justify-between items-center'>
+        <div className='w-72 h-32 border-solid border-2 border-gray-500 rounded-xl flex flex-col justify-between items-center'>
           <div className='mt-1 border-b-2'>
             <span className='text-white '>Lucas Domingos Vidotto</span>
           </div>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div> : 
         null}
-        <div className="max-w-xs w-72 h-9 mt-4 bg-neutral-800 text-violet-200 flex border-solid border-3 border-stone-900 rounded-xl" >
+        <div className="max-w-xs w-72 h-9 mt-4  text-violet-200 flex border-solid border-b-2 border-r-2 border-gray-500 rounded-xl" >
           <span className='ml-2 mt-1'>{type.one ? <span>{type.one.toString()}</span> : <span>{type.one.toString()}</span>}</span>
           <button 
           type='button' 
@@ -50,7 +50,7 @@ export default function Home() {
             {type.one ? <ArrowFatUp size="20px"/> : <ArrowFatDown size="20px"/>}</button>
         </div>
         {type.one ? 
-        <div className='w-72 h-32 bg-neutral-700 rounded-md flex flex-col justify-between items-center'>
+        <div className='w-72 h-32 border-solid border-2 border-gray-500 rounded-xl flex flex-col justify-between items-center'>
           <div className='mt-1 border-b-2'>
             <span className='text-white '>Lucas Domingos Vidotto</span>
           </div>
